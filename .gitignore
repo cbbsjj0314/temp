@@ -1,0 +1,54 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# VS Code 설정
+.vscode/
+
+# macOS, Windows 시스템 파일
+.DS_Store
+Thumbs.db
+
+# pytest 캐시
+.pytest_cache/
+
+# mypy, coverage, pip 관련 파일
+.mypy_cache/
+coverage/
+htmlcov/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# 로그 및 임시 파일
+*.log
+*.tmp
+
+# 파이썬 환경 설정 파일
+*.env
+.env
+.env.*
+
+# 파케이징 관련
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# 기타
+.idea/         # PyCharm
+*.sqlite3      # 임시 DB
+
+# 로그 파일
+*.log
+logs/
+log/
