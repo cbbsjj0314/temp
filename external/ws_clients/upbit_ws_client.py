@@ -2,6 +2,7 @@
 
 import asyncio
 import json
+import datetime
 import logging
 import websockets
 from kafka import KafkaProducer
@@ -36,6 +37,9 @@ class UpbitWSClient:
                 while True:
                     message = await websocket.recv()
                     parsed = json.loads(message)
+
+                    parsed["received_at"] = datetime.datetime.utcnow().isoformat()
+
                     self.producer.send(self.topic, parsed)
                     self.logger.info("Sent message to Kafka: %s", parsed)
 
