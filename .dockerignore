@@ -34,3 +34,7 @@ docs/
 # 로컬용 디렉토리
 dev/data/
 dev/logs/
+
+# venv
+.venv/
+.venvwsl/
