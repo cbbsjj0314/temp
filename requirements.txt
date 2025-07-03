@@ -3,6 +3,6 @@ requests
 redis
 
 fastapi==0.110.0
-uvicorn[standard]==0.29.
+uvicorn[standard]==0.29
 
 kafka-python
